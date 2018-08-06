@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <fragment
+        android:name="com.ptp.phamtanphat.fragmenttinhtoan.FragmentCong"
+        android:id="@+id/fragmentCong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <fragment
+        android:layout_below="@id/fragmentCong"
+        android:name="com.ptp.phamtanphat.fragmenttinhtoan.FragmentTru"
+        android:id="@+id/fragmentTru"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_below="@id/fragmentTru"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="= 40"
+        android:textSize="100sp"
+        android:id="@+id/textviewKetqua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
